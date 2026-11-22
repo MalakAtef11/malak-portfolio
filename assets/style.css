@@ -401,3 +401,16 @@ body.dark .social-orb{background:var(--cream)}body.dark .social-icon{background:
   .analysis-node:not(:last-child):after{transform:rotate(90deg)}
   .grad-feature:before{width:260px;height:260px}
 }
+
+
+/* Fourth game: real Python/Pygame showcase */
+.gm-card-featured-goldbound{grid-column:1/-1;display:grid;grid-template-columns:.95fr 1.05fr;min-height:385px}
+.gm-card-featured-goldbound .gm-card-copy{padding:36px 46px}
+.gm-visual.gm-goldbound{background:linear-gradient(135deg,#b4a288,#e7cfab)}
+.gm-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.gm-gallery figure{border:1px solid var(--line);background:var(--cream);padding:10px;border-radius:22px;margin:0;min-width:0;box-shadow:0 16px 40px rgba(63,25,39,.06)}
+.gm-gallery img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:14px}
+.gm-gallery figcaption{padding:14px 7px 7px;font-size:13px;font-weight:700;color:var(--ink)}
+.gm-visual-notes{padding-top:0}
+@media(max-width:900px){.gm-card-featured-goldbound{grid-template-columns:1fr}.gm-card-featured-goldbound .gm-card-copy{padding:30px}}
+@media(max-width:650px){.gm-gallery{grid-template-columns:1fr}.gm-gallery img{aspect-ratio:16/9}.gm-card-featured-goldbound .gm-card-copy{padding:25px}}
