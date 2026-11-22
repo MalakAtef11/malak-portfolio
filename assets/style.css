@@ -366,3 +366,13 @@ body.dark .social-orb{background:var(--cream)}body.dark .social-icon{background:
 .gm-stack-feature{padding:17px 0;border-block:1px solid var(--line);margin:22px 0;}
 .gm-stack-feature strong{display:block;font-size:32px;font-family:"Space Grotesk",sans-serif;letter-spacing:-.04em;margin-top:7px}
 @media(max-width:650px){.gm-explain-panel{padding:20px}.gm-explain-panel p{font-size:14px}}
+
+
+/* Three distinct modes in Pixel Quest */
+.gm-mode-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin:25px 0 34px}
+.gm-mode-card{background:var(--cream);border:1px solid var(--line);border-radius:20px;padding:22px 17px;min-width:0;transition:transform .28s ease,box-shadow .28s ease}
+.gm-mode-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(62,24,42,.09)}
+.gm-mode-card span{font-size:10px;font-weight:800;letter-spacing:.12em;color:var(--accent)}
+.gm-mode-card h4{font-family:"Space Grotesk",sans-serif;font-size:19px;line-height:1.12;letter-spacing:-.04em;margin:16px 0 10px}
+.gm-mode-card p{font-size:13px;line-height:1.65;color:var(--muted);margin:0}
+@media(max-width:650px){.gm-mode-grid{grid-template-columns:1fr}.gm-mode-card{padding:20px}.gm-mode-card h4{margin:10px 0 8px}}
