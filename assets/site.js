@@ -125,15 +125,56 @@
   modal?.querySelector('.modal-close')?.addEventListener('click',closeModal);
   modal?.addEventListener('click',e=>{if(e.target===modal)closeModal()});
   d.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
-  // The contact form uses a native HTML POST to FormSubmit.
-  // Do not preventDefault() here: it would stop the message reaching FormSubmit.
-  const form=d.getElementById('contact-form');
-  if(form && location.protocol==='file:'){
-    const tip=d.createElement('p');
-    tip.className='contact-local-warning';
-    tip.setAttribute('role','status');
-    tip.textContent='Local preview only — To send messages, open the website from an HTTPS link (e.g. GitHub Pages). A downloaded index.html file cannot submit to FormSubmit.';
-    form.appendChild(tip);
+  // FormSubmit's official AJAX endpoint keeps visitors on this page.
+  // The site remains frontend-only; FormSubmit handles delivery.
+  const form = d.getElementById('contact-form');
+  const sendButton = d.getElementById('contact-submit');
+  const feedback = d.getElementById('contact-feedback');
+  if (form && sendButton && feedback) {
+    const originalButtonHTML = sendButton.innerHTML;
+    const setFeedback = (message, type) => {
+      feedback.hidden = false;
+      feedback.className = 'contact-feedback is-' + type;
+      feedback.textContent = message;
+    };
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      if (!form.reportValidity() || sendButton.disabled) return;
+      // Silently reject bots that filled in the hidden honeypot.
+      if (form.querySelector('[name="_honey"]')?.value.trim()) return;
+
+      sendButton.disabled = true;
+      sendButton.textContent = 'Sending…';
+      form.setAttribute('aria-busy', 'true');
+      setFeedback('Sending your message…', 'sending');
+
+      try {
+        const data = Object.fromEntries(new FormData(form).entries());
+        const response = await fetch('https://formsubmit.co/ajax/malakatef614@gmail.com', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(data)
+        });
+        if (!response.ok) throw new Error('Service unavailable');
+        const result = await response.json();
+        // FormSubmit may return "true" / "false" as strings, so don't use truthiness.
+        if (result.success !== true && String(result.success).toLowerCase() !== 'true') {
+          throw new Error(result.message || 'Message was not accepted');
+        }
+        setFeedback('✓ Message sent! Thank you — I’ll get back to you soon. ♡', 'success');
+        form.reset();
+      } catch (error) {
+        console.error('Contact form could not send:', error);
+        setFeedback('Couldn’t send your message. Please try again, or use the email link beside this form.', 'error');
+      } finally {
+        sendButton.disabled = false;
+        sendButton.innerHTML = originalButtonHTML;
+        form.removeAttribute('aria-busy');
+      }
+    });
   }
 
 })();
