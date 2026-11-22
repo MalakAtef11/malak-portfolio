@@ -376,3 +376,41 @@ body.dark .social-orb{background:var(--cream)}body.dark .social-icon{background:
 .gm-mode-card h4{font-family:"Space Grotesk",sans-serif;font-size:19px;line-height:1.12;letter-spacing:-.04em;margin:16px 0 10px}
 .gm-mode-card p{font-size:13px;line-height:1.65;color:var(--muted);margin:0}
 @media(max-width:650px){.gm-mode-grid{grid-template-columns:1fr}.gm-mode-card{padding:20px}.gm-mode-card h4{margin:10px 0 8px}}
+
+
+
+/* Portfolio V12: device-independent CSS decorative icons */
+.v-icon{display:inline-block;width:1em;height:1em;vertical-align:-.15em;flex-shrink:0;stroke:currentColor;fill:none;overflow:visible}
+.nav-chevron .v-icon,.nav-panel-item b .v-icon{width:17px;height:17px}
+.nav-icon .v-icon,.role-icon .v-icon{width:22px;height:22px}
+.hero-actions .v-icon,.hero-text-link .v-icon,.btn .v-icon{width:17px;height:17px}
+.hero-kicker .v-icon{width:17px;height:17px}
+.portrait-orbit .v-icon,.hero-art-glyph .v-icon,.hero-art-star .v-icon{width:1em;height:1em}
+.spotlight-arrow .v-icon,.modal-close .v-icon,.proof-step .v-icon{width:20px;height:20px}
+/* Background arrows used to be glyphs, which Mobile Safari could style as emoji. */
+.analysis-node:not(:last-child):after{
+  content:"";
+  background:var(--accent) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14m-6-6 6 6-6 6'/%3E%3C/svg%3E") center / 17px 17px no-repeat;
+}
+.grad-feature:before{
+  content:"";width:320px;height:320px;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a35671' stroke-width='1.3' stroke-linecap='round'%3E%3Cpath d='M12 2v20M3.34 7l17.32 10M3.34 17 20.66 7'/%3E%3C/svg%3E") center / contain no-repeat;
+  opacity:.12;
+}
+@media(max-width:600px){
+  .analysis-node:not(:last-child):after{transform:rotate(90deg)}
+  .grad-feature:before{width:260px;height:260px}
+}
+
+
+/* Fourth game: real Python/Pygame showcase */
+.gm-card-featured-goldbound{grid-column:1/-1;display:grid;grid-template-columns:.95fr 1.05fr;min-height:385px}
+.gm-card-featured-goldbound .gm-card-copy{padding:36px 46px}
+.gm-visual.gm-goldbound{background:linear-gradient(135deg,#b4a288,#e7cfab)}
+.gm-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.gm-gallery figure{border:1px solid var(--line);background:var(--cream);padding:10px;border-radius:22px;margin:0;min-width:0;box-shadow:0 16px 40px rgba(63,25,39,.06)}
+.gm-gallery img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:14px}
+.gm-gallery figcaption{padding:14px 7px 7px;font-size:13px;font-weight:700;color:var(--ink)}
+.gm-visual-notes{padding-top:0}
+@media(max-width:900px){.gm-card-featured-goldbound{grid-template-columns:1fr}.gm-card-featured-goldbound .gm-card-copy{padding:30px}}
+@media(max-width:650px){.gm-gallery{grid-template-columns:1fr}.gm-gallery img{aspect-ratio:16/9}.gm-card-featured-goldbound .gm-card-copy{padding:25px}}
