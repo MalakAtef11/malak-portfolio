@@ -1,0 +1,1 @@
+V7 fixes the single-certificate modal layout by keeping navigation arrows in the grid as invisible placeholders, renders the full image centered, and offers +/- zoom with Fit and Open image. The original certificate files and all other portfolio pages are unchanged.

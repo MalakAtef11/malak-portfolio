@@ -1,0 +1,1 @@
+Place your real photos, certificates, screenshots and videos here. Then edit relevant HTML cards to add data-modal-src="media/your-file.jpg" (or .mp4). For thumbnails, replace the .visual placeholder HTML with an <img src="media/your-file.jpg" alt="..."> element.
