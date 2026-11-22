@@ -353,3 +353,16 @@ body.dark .social-orb{background:var(--cream)}body.dark .social-icon{background:
 @media(max-width:900px){.gm-hero-grid{grid-template-columns:1fr}.gm-hero-ticket{min-height:240px;max-width:370px;transform:rotate(3deg)}.gm-hero-ticket strong{font-size:105px}.gm-hero{padding:80px 0!important}.gm-story-grid{grid-template-columns:1fr}.gm-card-1{grid-template-columns:1fr}.gm-card-1 .gm-visual{min-height:320px}}
 @media(max-width:650px){.games-portfolio .gm-hero{padding:65px 0 78px}.gm-hero-copy h1{font-size:clamp(49px,13vw,75px)}.gm-hero-copy>p{font-size:16px}.gm-cards{grid-template-columns:1fr}.gm-card-1{grid-column:auto}.gm-card-copy{padding:26px}.gm-visual{min-height:230px}.gm-card-copy h3{font-size:36px}.gm-next-inner{flex-direction:column;align-items:start}.gm-detail-hero{padding-top:55px}.gm-detail-head h1{font-size:clamp(45px,11vw,72px)}.gm-detail-head p{font-size:15px}.gm-detail-count{width:70px;height:89px;align-self:start}.gm-detail-count strong{font-size:40px}.gm-detail-count span{font-size:8px}.gm-player-header,.gm-player-foot{padding:13px 14px}.gm-switch-games{grid-template-columns:1fr}.gm-feature-list p{font-size:14px}}
 @media(prefers-reduced-motion:reduce){.gm-card,.gm-switch-games a{transition:none}}
+
+/* Game project explanations */
+.gm-explain-panel{
+  margin-top:29px;padding:25px 27px;border-radius:23px;
+  border:1px solid var(--line);
+  background:linear-gradient(135deg,color-mix(in srgb,var(--soft) 80%,var(--cream) 20%),var(--cream));
+  box-shadow:0 10px 27px rgba(65,24,42,.035);
+}
+.gm-explain-label,.gm-stack-feature span{display:block;font-size:11px;color:var(--accent);font-weight:800;letter-spacing:.12em}
+.gm-explain-panel p{font-size:16px;line-height:1.8;color:var(--ink);margin:13px 0 0}
+.gm-stack-feature{padding:17px 0;border-block:1px solid var(--line);margin:22px 0;}
+.gm-stack-feature strong{display:block;font-size:32px;font-family:"Space Grotesk",sans-serif;letter-spacing:-.04em;margin-top:7px}
+@media(max-width:650px){.gm-explain-panel{padding:20px}.gm-explain-panel p{font-size:14px}}
