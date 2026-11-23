@@ -1,0 +1,37 @@
+/* Malak / Achievements & Volunteering coming-soon state */
+.ach-soon-page{overflow:hidden}
+.ach-soon-hero{padding:95px 0 85px;min-height:min(800px,calc(100svh - 78px));display:flex;align-items:center;background:radial-gradient(circle at 78% 23%,rgba(243,188,207,.25),transparent 31%),var(--paper);border-bottom:1px solid var(--line)}
+.ach-soon-layout{width:100%;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(320px,.95fr);gap:55px;align-items:center}
+.ach-soon-copy{min-width:0}
+.ach-soon-copy .eyebrow{letter-spacing:.14em;font-size:11px;font-weight:800}
+.ach-soon-label{display:inline-flex;align-items:center;gap:10px;font-size:10px;font-weight:800;letter-spacing:.16em;color:var(--accent);margin-top:54px}
+.ach-soon-label-dot{width:9px;height:9px;background:var(--accent);border-radius:50%;box-shadow:0 0 0 6px var(--soft)}
+.ach-soon-copy h1{font:700 clamp(50px,6.6vw,102px)/1 'Space Grotesk',Arial,sans-serif;letter-spacing:-.08em;max-width:790px;margin:24px 0}
+.ach-soon-copy h1 em{font-family:Georgia,serif;font-weight:400;color:var(--accent);letter-spacing:-.07em}
+.ach-soon-copy p{font-size:17px;line-height:1.8;max-width:575px;color:var(--muted)}
+.ach-soon-buttons{display:flex;align-items:center;gap:23px;flex-wrap:wrap;margin-top:34px}
+.ach-soon-arrow{width:17px;height:17px;vertical-align:-3px;margin-left:5px}
+.ach-soon-text-link{font-size:14px;font-weight:750;border-bottom:1px solid var(--accent);color:var(--accent);padding:11px 0;transition:opacity .2s}
+.ach-soon-text-link:hover{opacity:.75}
+.ach-soon-art{min-height:450px;display:grid;place-items:center;position:relative;min-width:0}
+.ach-soon-art:before{content:"";position:absolute;width:min(95%,430px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#f6cdd9,rgba(246,205,217,.05) 68%,transparent 72%);filter:blur(15px)}
+.ach-soon-sticker{position:relative;z-index:2;width:min(350px,90%);min-height:390px;padding:29px;background:linear-gradient(145deg,#a84366 0%,#76243f 57%,#4f2038 100%);color:#fff9f4;border-radius:32px 32px 95px 32px;box-shadow:24px 34px 55px rgba(68,22,42,.18);transform:rotate(-7deg);display:flex;flex-direction:column;justify-content:space-between}
+.ach-soon-sticker:after{content:"";position:absolute;inset:11px;border:1px dashed rgba(255,255,255,.29);border-radius:24px 24px 85px 24px;pointer-events:none}
+.ach-soon-sticker-top,.ach-soon-sticker-bottom{display:flex;justify-content:space-between;gap:12px;font-size:10px;letter-spacing:.1em;font-weight:750;opacity:.93}
+.ach-soon-big{font:800 clamp(83px,9vw,135px)/.9 'Space Grotesk',sans-serif;letter-spacing:-.12em}
+.ach-soon-big span{color:#ffb3d1}
+.ach-soon-sticker p{font:400 italic 22px/1.2 Georgia,serif;letter-spacing:-.02em;margin:0}
+.ach-soon-sticker-bottom{border-top:1px solid rgba(255,255,255,.38);padding-top:15px}
+.ach-soon-spark{position:absolute;z-index:3;color:var(--accent)}
+.ach-soon-spark-a{top:4%;right:12%;transform:rotate(-9deg)}
+.ach-soon-spark-b{bottom:9%;left:8%;transform:rotate(14deg)}
+.ach-soon-star{width:54px;height:54px;display:block}
+.ach-soon-spark-b .ach-soon-star{width:29px;height:29px}
+.ach-soon-note{position:absolute;z-index:4;bottom:15px;right:1%;transform:rotate(9deg);font:italic 15px Georgia,serif;color:var(--accent);background:var(--cream);border:1px solid var(--line);border-radius:18px;padding:16px 19px;box-shadow:var(--shadow);max-width:210px;text-align:center}
+.ach-soon-foot{padding:24px 0 44px;display:flex;gap:21px;align-items:center;flex-wrap:wrap}
+.ach-soon-foot>span{font-size:10px;letter-spacing:.14em;font-weight:800;color:var(--accent)}
+.ach-soon-foot a{font-size:13px;font-weight:750}
+.ach-soon-foot p{color:var(--muted);font-size:12px;margin:0}
+@media(max-width:900px){.ach-soon-layout{grid-template-columns:1fr;gap:35px}.ach-soon-hero{padding:70px 0}.ach-soon-copy h1{font-size:clamp(54px,10vw,86px)}.ach-soon-label{margin-top:32px}.ach-soon-art{min-height:380px}.ach-soon-sticker{min-height:330px;max-width:300px}.ach-soon-big{font-size:105px}}
+@media(max-width:650px){.ach-soon-hero{padding:45px 0 40px;min-height:0}.ach-soon-copy .eyebrow{font-size:10px}.ach-soon-copy h1{font-size:clamp(48px,12vw,72px);margin:18px 0 22px}.ach-soon-copy p{font-size:15px}.ach-soon-buttons{gap:17px;margin-top:26px}.ach-soon-buttons .btn{font-size:13px;padding:14px 17px}.ach-soon-text-link{font-size:12px}.ach-soon-art{min-height:330px}.ach-soon-sticker{width:min(80%,270px);min-height:303px;padding:25px;transform:rotate(-5deg)}.ach-soon-big{font-size:clamp(83px,24vw,98px)}.ach-soon-note{font-size:12px;padding:12px;right:0;bottom:8px}.ach-soon-spark-a{right:1%}.ach-soon-spark-b{left:3%;bottom:4%}.ach-soon-foot{gap:12px}}
+@media(prefers-reduced-motion:reduce){.ach-soon-text-link{transition:none}}
