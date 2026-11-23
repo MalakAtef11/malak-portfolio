@@ -134,3 +134,14 @@
 .wp-video-copy h3{font:750 clamp(22px,2.5vw,32px)/1.12 'Space Grotesk',Arial,sans-serif;letter-spacing:-.05em;margin:11px 0 12px}
 .wp-video-copy p{font-size:13px;line-height:1.7;color:var(--muted);margin:0}
 @media(max-width:760px){.wp-video-grid{grid-template-columns:1fr;gap:18px}.wp-video-copy{padding:19px 20px 23px}.wp-video-frame{aspect-ratio:16/9}.wp-video-frame video{width:100%;height:100%}}
+
+
+/* ArtShop — genuine original concept art with an adaptive image gallery */
+.wp-artshop-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.wp-concept-media-card{min-width:0;overflow:hidden;border:1px solid var(--line);border-radius:26px;background:var(--cream);margin:0;display:flex;flex-direction:column}
+.wp-concept-media-image{background:#f3e7df;aspect-ratio:4/3;overflow:hidden}
+.wp-concept-media-image img{width:100%;height:100%;display:block;object-fit:contain}
+.wp-concept-media-card figcaption{display:grid;gap:10px;padding:25px}
+.wp-concept-media-card figcaption strong{font:750 clamp(23px,2.5vw,33px)/1.15 'Space Grotesk',Arial,sans-serif;letter-spacing:-.04em}
+.wp-concept-media-card figcaption>span:last-child{font-size:13px;line-height:1.7;color:var(--muted)}
+@media(max-width:720px){.wp-artshop-gallery{grid-template-columns:1fr;gap:15px}.wp-concept-media-image{aspect-ratio:4/3}.wp-concept-media-card figcaption{padding:20px}}
