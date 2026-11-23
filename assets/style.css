@@ -687,3 +687,107 @@ html[dir="rtl"] .wp-video-copy h3{line-height:1.35}
  .hero-composition{width:calc(100% - 24px)}
  .container{width:calc(100% - 24px)}
 }
+
+
+/* 2026-11-23 · FIX: mobile showcase card was trapped in a 30px grid column.
+   The navigation buttons are absolutely positioned on mobile, so the stage
+   must span the entire shell, not the first implicit grid cell. */
+@media (max-width:980px) {
+  .showcase-section .spotlight-shell{
+    display:block;
+    width:100%;
+    min-width:0;
+    position:relative;
+  }
+  .showcase-section .spotlight-stage{
+    display:block;
+    width:100%;
+    min-width:0;
+    max-width:100%;
+    margin-inline:auto;
+    height:380px;
+    overflow:hidden;
+    position:relative;
+    perspective:1600px;
+  }
+  .showcase-section .spot-card{
+    left:50%;
+    width:min(300px,calc(100% - 38px));
+    max-width:calc(100% - 38px);
+    min-width:0;
+  }
+  .showcase-section .spotlight-arrow{
+    position:absolute;
+    z-index:51;
+    top:auto;
+    bottom:-9px;
+  }
+  .showcase-section .spotlight-arrow.prev{
+    left:calc(50% - 69px);
+    right:auto;
+  }
+  .showcase-section .spotlight-arrow.next{
+    right:calc(50% - 69px);
+    left:auto;
+  }
+  .showcase-section .spotlight-caption{
+    width:100%;
+    max-width:100%;
+    padding:36px 0 0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    gap:15px;
+  }
+  .showcase-section .spotlight-counter{
+    flex:0 0 auto;
+  }
+  .showcase-section .spotlight-caption p{
+    flex:1 1 210px;
+    min-width:0;
+    overflow-wrap:break-word;
+  }
+}
+@media (max-width:640px) {
+  .showcase-section .spotlight-stage{height:347px}
+  .showcase-section .spot-card{
+    top:17px;
+    width:min(270px,calc(100% - 44px));
+    max-width:calc(100% - 44px);
+    height:294px;
+    padding:18px 18px 16px;
+  }
+  .showcase-section .spotlight-caption{
+    flex-direction:column;
+    padding-top:39px;
+    gap:14px;
+  }
+  .showcase-section .spotlight-counter{font-size:20px}
+  .showcase-section .spotlight-caption p{
+    flex:0 1 auto;
+    width:100%;
+    text-align:center;
+    min-width:0;
+    line-height:1.65;
+  }
+  .showcase-section .spotlight-link{
+    margin-inline:auto;
+    width:auto;
+    max-width:100%;
+    white-space:normal;
+    text-align:center;
+  }
+}
+@media (max-width:390px) {
+  .showcase-section .spotlight-stage{height:325px}
+  .showcase-section .spot-card{
+    width:min(238px,calc(100% - 46px));
+    max-width:calc(100% - 46px);
+    height:273px;
+  }
+}
+@media (max-width:320px) {
+  .showcase-section .spotlight-stage{height:315px}
+  .showcase-section .spot-card{width:min(222px,calc(100% - 40px))}
+}
