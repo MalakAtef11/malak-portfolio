@@ -35,3 +35,91 @@
 @media(max-width:900px){.ach-soon-layout{grid-template-columns:1fr;gap:35px}.ach-soon-hero{padding:70px 0}.ach-soon-copy h1{font-size:clamp(54px,10vw,86px)}.ach-soon-label{margin-top:32px}.ach-soon-art{min-height:380px}.ach-soon-sticker{min-height:330px;max-width:300px}.ach-soon-big{font-size:105px}}
 @media(max-width:650px){.ach-soon-hero{padding:45px 0 40px;min-height:0}.ach-soon-copy .eyebrow{font-size:10px}.ach-soon-copy h1{font-size:clamp(48px,12vw,72px);margin:18px 0 22px}.ach-soon-copy p{font-size:15px}.ach-soon-buttons{gap:17px;margin-top:26px}.ach-soon-buttons .btn{font-size:13px;padding:14px 17px}.ach-soon-text-link{font-size:12px}.ach-soon-art{min-height:330px}.ach-soon-sticker{width:min(80%,270px);min-height:303px;padding:25px;transform:rotate(-5deg)}.ach-soon-big{font-size:clamp(83px,24vw,98px)}.ach-soon-note{font-size:12px;padding:12px;right:0;bottom:8px}.ach-soon-spark-a{right:1%}.ach-soon-spark-b{left:3%;bottom:4%}.ach-soon-foot{gap:12px}}
 @media(prefers-reduced-motion:reduce){.ach-soon-text-link{transition:none}}
+
+
+/* 2026-11-23 / Achievements page: laptop composition and language-safe typography */
+.ach-soon-page,.ach-soon-hero,.ach-soon-layout{min-width:0}
+.ach-soon-hero{padding-block:clamp(56px,6vw,90px);min-height:min(760px,calc(100svh - 76px))}
+.ach-soon-layout{
+ grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);
+ gap:clamp(22px,3.3vw,52px);
+ width:min(100% - 48px,1200px);
+ align-items:center;
+}
+.ach-soon-copy{min-width:0;max-width:100%}
+.ach-soon-copy h1{
+ font-size:clamp(46px,5vw,80px);
+ line-height:1.08;
+ letter-spacing:-.055em;
+ max-width:100%;
+ overflow-wrap:normal;
+}
+.ach-soon-copy h1 em{letter-spacing:-.04em}
+.ach-soon-copy p{max-width:620px}
+.ach-soon-art{min-width:0;min-height:385px;max-width:100%;overflow:visible}
+.ach-soon-sticker{min-width:0;width:min(340px,84%);padding:clamp(21px,2.1vw,29px)}
+.ach-soon-big{font-size:clamp(72px,8vw,112px);letter-spacing:-.1em;overflow-wrap:normal}
+.ach-soon-buttons{gap:18px}
+.ach-soon-buttons .btn{max-width:100%;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.ach-soon-foot{max-width:1200px}
+html[dir="rtl"] .ach-soon-copy h1,
+html[dir="rtl"] .ach-soon-big,
+html[dir="rtl"] .ach-soon-sticker p{font-family:Tahoma,Arial,sans-serif!important;letter-spacing:normal!important;line-height:1.4}
+html[dir="rtl"] .ach-soon-copy h1{font-size:clamp(40px,4.9vw,73px);line-height:1.32}
+html[dir="rtl"] .ach-soon-copy h1 br,
+html[dir="rtl"] .ach-soon-sticker p br{display:none}
+html[dir="rtl"] .ach-soon-copy h1 em{letter-spacing:normal;display:inline-block}
+html[dir="rtl"] .ach-soon-sticker{transform:rotate(0deg);border-radius:32px}
+html[dir="rtl"] .ach-soon-big{font-size:clamp(45px,5.3vw,73px);line-height:1.5;white-space:normal;overflow-wrap:normal}
+html[dir="rtl"] .ach-soon-sticker-top,
+html[dir="rtl"] .ach-soon-sticker-bottom{letter-spacing:normal;font-family:Tahoma,Arial,sans-serif;font-size:11px;gap:10px;flex-wrap:wrap}
+html[dir="rtl"] .ach-soon-label,
+html[dir="rtl"] .ach-soon-copy .eyebrow{letter-spacing:normal;line-height:1.8}
+html[dir="rtl"] .ach-soon-sticker p{font-size:clamp(15px,1.8vw,19px)}
+html[dir="rtl"] .ach-soon-note{font-family:Tahoma,Arial,sans-serif;transform:rotate(0);line-height:1.6}
+html[dir="rtl"] .ach-soon-arrow{transform:scaleX(-1);margin:0 5px 0 0}
+@media(max-width:1060px){
+ .ach-soon-layout{grid-template-columns:minmax(0,1fr) minmax(0,.86fr);gap:22px}
+ .ach-soon-copy h1{font-size:clamp(43px,5vw,58px)}
+ .ach-soon-art{min-height:340px}
+ .ach-soon-sticker{min-height:325px}
+ .ach-soon-big{font-size:clamp(65px,8vw,90px)}
+}
+@media(max-width:880px){
+ .ach-soon-hero{padding:55px 0 45px;min-height:0}
+ .ach-soon-layout{width:min(100% - 40px,680px);grid-template-columns:minmax(0,1fr);gap:34px}
+ .ach-soon-copy h1{font-size:clamp(45px,8vw,76px)}
+ .ach-soon-copy p{max-width:100%}
+ .ach-soon-label{margin-top:26px}
+ .ach-soon-art{min-height:330px}
+ .ach-soon-sticker{width:min(300px,78%);min-height:315px}
+ html[dir="rtl"] .ach-soon-copy h1{font-size:clamp(41px,7.4vw,66px)}
+ html[dir="rtl"] .ach-soon-big{font-size:clamp(51px,9vw,74px)}
+}
+@media(max-width:520px){
+ .ach-soon-layout{width:min(100% - 28px,460px);gap:20px}
+ .ach-soon-copy h1{font-size:clamp(40px,10.8vw,59px);letter-spacing:-.045em;line-height:1.12}
+ .ach-soon-copy p{font-size:clamp(14px,3.6vw,16px);line-height:1.75}
+ .ach-soon-label{margin-top:21px}
+ .ach-soon-buttons{gap:12px;margin-top:20px}
+ .ach-soon-buttons .btn{white-space:normal}
+ .ach-soon-art{min-height:310px}
+ .ach-soon-sticker{width:min(270px,78%);min-height:285px;padding:23px}
+ .ach-soon-big{font-size:clamp(65px,19vw,91px)}
+ .ach-soon-sticker-top,.ach-soon-sticker-bottom{font-size:9px;gap:5px}
+ .ach-soon-note{right:0;bottom:5px;max-width:150px;padding:9px;font-size:11px}
+ html[dir="rtl"] .ach-soon-copy h1{font-size:clamp(35px,9vw,47px)}
+ html[dir="rtl"] .ach-soon-big{font-size:clamp(45px,11vw,61px)}
+ html[dir="rtl"] .ach-soon-note{font-size:10px}
+ .ach-soon-foot{padding-bottom:30px}
+}
+@media(max-width:360px){
+ .ach-soon-sticker{width:min(235px,80%);min-height:275px;padding:19px}
+ .ach-soon-sticker p{font-size:17px}
+ .ach-soon-big{font-size:clamp(61px,20vw,77px)}
+ .ach-soon-art{min-height:295px}
+ .ach-soon-copy h1{font-size:clamp(37px,11vw,44px)}
+ html[dir="rtl"] .ach-soon-big{font-size:43px}
+ .ach-soon-spark-a{right:0}
+ .ach-soon-spark-b{left:0}
+}
