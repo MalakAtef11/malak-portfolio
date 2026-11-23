@@ -51,7 +51,7 @@ function scan(root,lang){
  nodes.forEach(n=>updateText(n,lang));
  // Translate accessible labels and form placeholders without touching values.
  root.querySelectorAll?.("[placeholder],[aria-label],[title]").forEach(el=>{
-   if(el.matches("[data-lang-toggle]"))continue;
+   if(el.matches("[data-lang-toggle]"))return;
    for(const a of ["placeholder","aria-label","title"]){
      if(!el.hasAttribute(a))continue;
      const key="data-original-"+a;
