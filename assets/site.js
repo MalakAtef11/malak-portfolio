@@ -2,6 +2,10 @@
   const d = document;
   const body=d.body;
   try { if(localStorage.getItem('malak-theme')==='dark')body.classList.add('dark'); }catch{}
+  /* Consistent SVG theme control for iOS Safari */
+  d.querySelectorAll('[data-theme]').forEach(btn=>{
+    btn.innerHTML='<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"></circle><path d="M12 3a9 9 0 0 1 0 18Z" fill="currentColor" stroke="none"></path></svg>';
+  });
   d.querySelectorAll('[data-theme]').forEach(btn=>btn.addEventListener('click',()=>{
     body.classList.toggle('dark');try{localStorage.setItem('malak-theme',body.classList.contains('dark')?'dark':'light')}catch{}
   }));
