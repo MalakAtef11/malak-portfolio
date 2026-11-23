@@ -197,24 +197,39 @@
   let autoTimer;
   const wrap=(n)=> (n+cards.length)%cards.length;
   function render(){
+    const mobile = window.matchMedia('(max-width: 980px)').matches;
     cards.forEach((card,i)=>{
       const raw=i-active;
       const offset=((raw + cards.length + Math.floor(cards.length/2)) % cards.length) - Math.floor(cards.length/2);
       const abs=Math.abs(offset);
-      const limited=Math.min(abs,3);
-      const dir=Math.sign(offset)||0;
-      const tx=offset*164;
-      const tz=abs===0?130:abs===1?18:-100-(limited-2)*35;
-      const ry=offset* -13;
-      const scale=abs===0?1:abs===1?.9:abs===2?.78:.66;
-      const opacity=abs>3?0:abs===3?.16:abs===2?.34:abs===1?.68:1;
-      const blur=abs>0?Math.min(abs*1.5,4):0;
-      card.style.transform=`translateX(calc(-50% + ${tx}px)) translateZ(${tz}px) rotateY(${ry}deg) scale(${scale})`;
-      card.style.opacity=String(opacity);
-      card.style.filter=`blur(${blur}px)`;
-      card.style.zIndex=String(40-abs);
+      if(mobile){
+        // Safari-safe: one centered card, no perspective, no calc() or translateZ().
+        // Positioning is handled only by left:0/right:0/margin:auto in CSS.
+        card.style.transform='none';
+        card.style.opacity=abs===0?'1':'0';
+        card.style.visibility=abs===0?'visible':'hidden';
+        card.style.filter='none';
+        card.style.zIndex=String(40-abs);
+        card.style.pointerEvents=abs===0?'auto':'none';
+        card.style.willChange='auto';
+      }else{
+        const limited=Math.min(abs,3);
+        const tx=offset*164;
+        const tz=abs===0?130:abs===1?18:-100-(limited-2)*35;
+        const ry=offset*-13;
+        const scale=abs===0?1:abs===1?.9:abs===2?.78:.66;
+        const opacity=abs>3?0:abs===3?.16:abs===2?.34:abs===1?.68:1;
+        const blur=abs>0?Math.min(abs*1.5,4):0;
+        card.style.transform=`translateX(calc(-50% + ${tx}px)) translateZ(${tz}px) rotateY(${ry}deg) scale(${scale})`;
+        card.style.opacity=String(opacity);
+        card.style.visibility='visible';
+        card.style.filter=`blur(${blur}px)`;
+        card.style.zIndex=String(40-abs);
+        card.style.pointerEvents=abs===0?'auto':'none';
+        card.style.willChange='transform';
+      }
       card.classList.toggle('is-active',abs===0);
-      card.setAttribute('aria-hidden',abs>2?'true':'false');
+      card.setAttribute('aria-hidden',abs===0?'false':'true');
       card.tabIndex=abs===0?0:-1;
     });
     if(counter)counter.textContent=`${String(active+1).padStart(2,'0')} / ${String(cards.length).padStart(2,'0')}`;
@@ -232,6 +247,8 @@
     card.addEventListener('click',(e)=>{if(i!==active){e.preventDefault();active=i;render();restartAuto();}});
   });
   showcase.addEventListener('keydown',(e)=>{if(e.key==='ArrowLeft'){e.preventDefault();go(-1)} if(e.key==='ArrowRight'){e.preventDefault();go(1)}});
+  window.addEventListener('resize',render,{passive:true});
+  window.addEventListener('orientationchange',render,{passive:true});
   render();restartAuto();
 })();
 
