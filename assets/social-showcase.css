@@ -156,3 +156,27 @@
 .sm-page .sm-hero-ctas{align-items:stretch}
 .sm-page .sm-hero-ctas a{justify-content:center}
 }
+
+
+/* Portrait-native workflow: no pinch zoom, sideways scrolling or emoji glyphs */
+.sm-page .sm-workflow-card{width:100%;min-width:0;max-width:100%;margin-inline:0;overflow:hidden;box-sizing:border-box}
+.sm-page .sm-workflow-desktop{width:100%;max-width:100%;min-width:0;display:block;height:auto}
+.sm-page .sm-mobile-workflow{display:none}
+@media(max-width:750px){
+ .sm-page .sm-workflow-card{margin:24px 0 0;padding:16px;border-radius:22px;min-width:0}
+ .sm-page .sm-workflow-card .sm-workflow-desktop{display:none!important}
+ .sm-page .sm-mobile-workflow{display:grid;gap:15px;min-width:0;width:100%;max-width:100%;overflow:hidden}
+ .sm-page .sm-mob-flow-intro{background:linear-gradient(135deg,#f4e3e8,#f9eeef);border:1px solid #ecd4dd;border-radius:20px;padding:20px;color:#281d27}
+ .sm-page .sm-mob-flow-intro>span{font-size:10px;letter-spacing:.15em;font-weight:800;color:#7f2441}
+ .sm-page .sm-mob-flow-intro h3{font:700 clamp(24px,7vw,34px)/1.1 'Space Grotesk',sans-serif;letter-spacing:-.05em;margin:12px 0}
+ .sm-page .sm-mob-flow-intro p{font-size:13px;line-height:1.65;margin:0;color:#68555d}
+ .sm-page .sm-mob-flow-group{background:var(--paper);border:1px solid var(--line);padding:17px;border-radius:18px;min-width:0}
+ .sm-page .sm-mob-flow-heading{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+ .sm-page .sm-mob-flow-heading>span{font-size:10px;letter-spacing:.09em;font-weight:800;color:var(--accent);white-space:nowrap}
+ .sm-page .sm-mob-flow-heading h3{margin:0;font:700 16px/1.2 'Space Grotesk',sans-serif;letter-spacing:-.03em}
+ .sm-page .sm-mob-flow-list{display:grid;gap:7px;padding:0;margin:0;list-style:none}
+ .sm-page .sm-mob-flow-list li{min-width:0;display:flex;align-items:center;gap:12px;background:var(--cream);border:1px solid var(--line);border-radius:12px;padding:12px;font-size:12px;line-height:1.3;font-weight:750;overflow-wrap:anywhere}
+ .sm-page .sm-mob-flow-num{display:grid;place-items:center;flex:0 0 29px;width:29px;height:29px;background:var(--soft);color:var(--accent);border-radius:50%;font-size:10px}
+ .sm-page .sm-mob-flow-footer{margin:0;padding:14px 9px;border-radius:13px;background:var(--accent);color:var(--paper);text-align:center;font-size:10px;font-weight:800;letter-spacing:.11em;line-height:1.5}
+ .sm-page .sm-workflow-card figcaption{font-size:11px;line-height:1.5;overflow-wrap:break-word;padding:11px 3px 0}
+}
