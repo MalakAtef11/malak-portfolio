@@ -343,3 +343,13 @@ document.querySelectorAll('video[data-demo-video]').forEach(video=>{
   });
   observer.observe(document.body,{subtree:true,childList:true,characterData:true});
 })();
+
+/* Bilingual interface enhancement shared by every portfolio page. */
+(() => {
+  if (document.querySelector('script[data-portfolio-i18n]')) return;
+  const script=document.createElement('script');
+  script.dataset.portfolioI18n='';
+  script.src=new URL('i18n-ar.js?v=20261123-v2',document.currentScript?.src || document.baseURI).href;
+  script.async=false;
+  document.body.appendChild(script);
+})();
