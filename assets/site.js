@@ -260,6 +260,8 @@ document.querySelectorAll('video[data-demo-video]').forEach(video=>{
   "use strict";
   const NS = "http://www.w3.org/2000/svg";
   const iconData = {
+    "◇":["diamond",'<path d="m12 2 10 10-10 10L2 12 12 2Z"/>'],
+    "⌄":["chevron-down",'<path d="m6 9 6 6 6-6"/>'],
     "↗":["arrow-up-right",'<path d="M7 17 17 7M8 7h9v9"/>'],
     "↖":["arrow-up-left",'<path d="M17 17 7 7M7 16V7h9"/>'],
     "↘":["arrow-down-right",'<path d="m7 7 10 10M8 17h9V8"/>'],
@@ -285,8 +287,8 @@ document.querySelectorAll('video[data-demo-video]').forEach(video=>{
     "‹":["chevron-left",'<path d="m15 6-6 6 6 6"/>'],
     "☾":["moon",'<path d="M20.8 15.5A9 9 0 0 1 8.5 3.2 9 9 0 1 0 20.8 15.5Z"/>']
   };
-  const pattern=/([↗↖↘↙→←↑↓✳✿✦✧★✺♡♥✉✕⌘✓✔›‹☾])[\uFE0E\uFE0F]?/gu;
-  const check=/[↗↖↘↙→←↑↓✳✿✦✧★✺♡♥✉✕⌘✓✔›‹☾]/u;
+  const pattern=/([↗↖↘↙→←↑↓◇⌄✳✿✦✧★✺♡♥✉✕⌘✓✔›‹☾])[\uFE0E\uFE0F]?/gu;
+  const check=/[↗↖↘↙→←↑↓◇⌄✳✿✦✧★✺♡♥✉✕⌘✓✔›‹☾]/u;
   const blocked="script,style,textarea,pre,code,svg,math,option,noscript,[data-keep-symbol]";
   function makeIcon(symbol) {
     const data=iconData[symbol];
@@ -349,7 +351,8 @@ document.querySelectorAll('video[data-demo-video]').forEach(video=>{
   if (document.querySelector('script[data-portfolio-i18n]')) return;
   const script=document.createElement('script');
   script.dataset.portfolioI18n='';
-  script.src=new URL('i18n-ar.js?v=20261123-v2',document.currentScript?.src || document.baseURI).href;
+  const siteAsset=document.querySelector('script[src*="assets/site.js"]');
+  script.src=new URL('i18n-ar.js?v=20261123-v3',siteAsset?.src || document.currentScript?.src || document.baseURI).href;
   script.async=false;
   document.body.appendChild(script);
 })();
