@@ -414,3 +414,121 @@ body.dark .social-orb{background:var(--cream)}body.dark .social-icon{background:
 .gm-visual-notes{padding-top:0}
 @media(max-width:900px){.gm-card-featured-goldbound{grid-template-columns:1fr}.gm-card-featured-goldbound .gm-card-copy{padding:30px}}
 @media(max-width:650px){.gm-gallery{grid-template-columns:1fr}.gm-gallery img{aspect-ratio:16/9}.gm-card-featured-goldbound .gm-card-copy{padding:25px}}
+
+
+/* ===========================================================
+   2026 / Responsive system + bilingual interface + icon safety
+   =========================================================== */
+:root{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html,body{max-width:100%;overflow-x:clip}
+body,main,section,article,.container,.top-inner{min-width:0}
+*,*::before,*::after{box-sizing:border-box}
+img,video,iframe,canvas{max-width:100%}
+img,video{height:auto}
+svg{max-width:100%}
+h1,h2,h3,h4,p,figcaption,button,summary,a{overflow-wrap:break-word}
+pre,code{overflow-wrap:anywhere}
+table{max-width:100%}
+button,a,summary,input,select,textarea{-webkit-tap-highlight-color:transparent}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.portfolio-svg-icon{flex-shrink:0;display:inline-block;vertical-align:middle;stroke:currentColor;fill:none}
+.lang-toggle{
+ border:1px solid var(--line);background:var(--cream);color:var(--ink);
+ border-radius:999px;min-height:42px;padding:9px 13px;display:inline-flex;
+ align-items:center;justify-content:center;gap:8px;white-space:nowrap;
+ font:750 12px/1.1 'DM Sans',Tahoma,sans-serif;letter-spacing:.01em;
+ box-shadow:0 4px 12px rgba(49,22,38,.03);transition:background .2s,border-color .2s;
+ flex-shrink:0;cursor:pointer;
+}
+.lang-toggle:hover,.lang-toggle[aria-pressed=true]{background:var(--soft);border-color:var(--accent);color:var(--accent)}
+.lang-toggle svg{width:17px;height:17px;min-width:17px;max-width:17px}
+.top-inner>.logo,.top-inner>.theme-btn,.top-inner>.menu-btn{flex-shrink:0}
+.top-inner>.nav{min-width:0}
+.nav-studio .nav-panel-item{min-width:0}
+.nav-studio .nav-panel-item span{min-width:0}
+.nav-studio .nav-panel-item strong,.nav-studio .nav-panel-item small{white-space:normal}
+.wp-page .wp-featured,.wp-page .wp-card,.wp-page .wp-concept-card,.wp-page .wp-real-photo{min-width:0}
+.wp-page .wp-concept-img img,.wp-page .wp-card-media img{max-width:100%}
+.wp-page .wp-card-copy,.wp-page .wp-featured-copy,.wp-page .wp-concept-copy{min-width:0}
+.contact-layout>*{min-width:0}
+.sm-page .sm-workflow-card{max-width:100%;width:100%;min-width:0;overflow:hidden}
+.sm-page .sm-workflow-card img{width:100%;max-width:100%;height:auto;display:block}
+.sm-page .sm-workflow-card figcaption{max-width:100%;overflow-wrap:anywhere}
+.modal-panel{max-width:min(94vw,1200px);max-height:calc(100dvh - 30px);overflow:auto}
+.media-modal img,.modal img{max-width:100%;height:auto;object-fit:contain}
+html[dir="rtl"]{font-family:'DM Sans',Tahoma,Arial,sans-serif}
+html[dir="rtl"] body,html[dir="rtl"] main,html[dir="rtl"] .nav,html[dir="rtl"] .footer{direction:rtl}
+html[dir="rtl"] h1,html[dir="rtl"] h2,html[dir="rtl"] h3,
+html[dir="rtl"] h4,html[dir="rtl"] p,html[dir="rtl"] figcaption,
+html[dir="rtl"] .wp-heading-row,html[dir="rtl"] .wp-featured-copy,
+html[dir="rtl"] .wp-concept-copy,html[dir="rtl"] .wp-card-copy,
+html[dir="rtl"] .nav-panel-heading{text-align:right}
+html[dir="rtl"] .nav{margin-left:0;margin-right:auto}
+html[dir="rtl"] .nav-panel-list{text-align:right}
+html[dir="rtl"] .nav-group .nav-panel-item{flex-direction:row}
+html[dir="rtl"] .top-inner>.logo{direction:ltr}
+html[dir="rtl"] .lang-toggle{direction:ltr}
+html[dir="rtl"] .wp-case-number,html[dir="rtl"] .sm-metric strong{direction:ltr}
+html[dir="rtl"] .wp-role-note{border-left:0;border-right:3px solid var(--accent);border-radius:16px 0 0 16px}
+html[dir="rtl"] .wp-back{direction:rtl}
+html[dir="rtl"] .wp-arrow{transform:scaleX(-1)}
+html[dir="rtl"] .wp-link:hover .wp-arrow{transform:scaleX(-1) translate(-3px,-3px)}
+html[dir="rtl"] input,html[dir="rtl"] textarea,html[dir="rtl"] select{text-align:right}
+html[dir="rtl"] input[type="email"]{direction:ltr;text-align:left}
+html[dir="rtl"] .social-hub,html[dir="rtl"] .hero-actions{text-align:center}
+html[dir="rtl"] .wp-case-number,html[dir="rtl"] .sm-primary-sticker,
+html[dir="rtl"] .wp-intro-ticket{text-align:center}
+html[dir="rtl"] .wp-artshop-gallery{direction:rtl}
+html[dir="rtl"] .wp-video-frame video{direction:ltr}
+@media(max-width:1150px){
+ .top-inner{gap:12px}
+ .lang-toggle{min-height:42px;padding:9px 12px}
+ .top-inner>.menu-btn{margin-left:auto}
+ html[dir="rtl"] .top-inner>.menu-btn{margin-left:0;margin-right:auto}
+ .nav-studio{max-width:calc(100vw - 24px);box-sizing:border-box}
+ .nav-studio.open{overscroll-behavior:contain}
+}
+@media(max-width:900px){
+ .container{width:min(100% - 36px,1200px)}
+ .project-feature,.hero-split,.contact-layout{min-width:0}
+ .hero h1,.wp-page .wp-title{overflow-wrap:anywhere}
+ .home-pages,.stats,.skills-list{min-width:0}
+}
+@media(max-width:650px){
+ .container{width:min(100% - 28px,1200px)}
+ .top-inner{padding:11px 14px;gap:8px}
+ .top-inner .logo{font-size:clamp(19px,5vw,25px)}
+ .menu-btn{gap:6px;min-height:42px;padding:9px 11px}
+ .theme-btn{min-height:42px;min-width:42px;display:grid;place-items:center;padding:8px}
+ .lang-toggle{min-height:42px;min-width:59px;padding:9px 10px;gap:5px;font-size:11px}
+ .lang-toggle svg{width:14px;height:14px;min-width:14px}
+ .nav-studio{top:68px;left:8px;right:8px;max-width:calc(100vw - 16px)}
+ .wp-page .wp-heading-row{min-width:0}
+ .wp-page .wp-case-headline>*{min-width:0}
+ .wp-page .wp-feature-grid,.wp-page .wp-flow,.wp-page .wp-real-media-grid,.wp-page .wp-artshop-gallery{min-width:0;max-width:100%}
+ .wp-page .wp-concept-media-card{min-width:0}
+ .wp-page .wp-concept-media-image img{object-fit:contain}
+ .wp-page .wp-case-top,.wp-page .wp-intro{overflow:hidden}
+ .wp-page .wp-intro-grid,.wp-page .wp-overview-grid{min-width:0}
+ .wp-page .wp-title{font-size:clamp(43px,11.2vw,70px)}
+ .sm-page .sm-workflow-card{padding:9px;overflow:hidden}
+ .sm-page .sm-workflow-card img{width:100%;height:auto;object-fit:contain}
+ .gm-gallery,.gm-card-grid{max-width:100%}
+ .modal-panel{max-width:calc(100vw - 18px);padding:16px}
+}
+@media(max-width:390px){
+ .top-inner{padding:9px 9px;gap:5px}
+ .top-inner .logo{font-size:19px}
+ .lang-toggle{min-width:49px;padding:8px 6px;font-size:10px}
+ .lang-toggle svg{width:13px;height:13px;min-width:13px}
+ .theme-btn{min-width:38px;padding:7px}
+ .menu-btn{padding:8px 8px}
+ .menu-btn>span:last-child{font-size:12px}
+ .wp-page .wp-title{font-size:clamp(39px,11.4vw,56px)}
+ .wp-page .wp-hero-ctas{flex-wrap:wrap}
+}
+@media(hover:none),(pointer:coarse){
+ .cursor-paw,.cursor-dot{display:none!important}
+ button,a,summary{touch-action:manipulation}
+}
+@media(prefers-reduced-motion:reduce){.lang-toggle{transition:none}}
