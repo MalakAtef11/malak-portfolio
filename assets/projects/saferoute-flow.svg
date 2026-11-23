@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 940" role="img" aria-label="SafeRoute product workflow illustration pending original screenshots"><title>SafeRoute product workflow illustration pending original screenshots</title><defs><linearGradient id="road" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#123448"/><stop offset="1" stop-color="#24687a"/></linearGradient></defs><rect width="1500" height="940" rx="40" fill="#f4f9fa"/>
+<circle cx="1430" cy="95" r="330" fill="#dceef0"/>
+<text x="85" y="112" font-family="Arial,Helvetica,sans-serif" font-size="50" fill="#155263" font-weight="900" letter-spacing="1">SAFEROUTE</text>
+<text x="85" y="161" font-family="Arial,Helvetica,sans-serif" font-size="27" fill="#466572" font-weight="500" >From a street report to a resolved incident</text>
+<text x="85" y="201" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#627f87" font-weight="750" letter-spacing="2">SYSTEM WORKFLOW ILLUSTRATION • ORIGINAL DEMO MEDIA WILL BE ADDED</text>
+<rect x="85" y="277" width="1330" height="545" rx="32" fill="url(#road)"/>
+<g><rect x="134" y="363" width="272" height="360" rx="23" fill="#f7fbfb"/>
+<circle cx="181" cy="418" r="27" fill="#155263"/><text x="173" y="427" font-family="Arial,Helvetica,sans-serif" font-size="25" fill="#fff" font-weight="800" >1</text>
+<text x="159" y="493" font-family="Arial,Helvetica,sans-serif" font-size="26" fill="#154459" font-weight="800" >Citizen</text>
+<text x="159" y="556" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#446576" font-weight="500" >Location + media</text>
+<text x="159" y="590" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#446576" font-weight="500" >Report submitted</text>
+<rect x="159" y="632" width="202" height="38" rx="19" fill="#b6d9dc"/><text x="177" y="656" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#155263" font-weight="800" letter-spacing="2">SUBMIT</text>
+<path d="M420 541 h27 m-9-9 9 9-9 9" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/>
+</g><g><rect x="456" y="363" width="272" height="360" rx="23" fill="#dbeaec"/>
+<circle cx="503" cy="418" r="27" fill="#155263"/><text x="495" y="427" font-family="Arial,Helvetica,sans-serif" font-size="25" fill="#fff" font-weight="800" >2</text>
+<text x="481" y="493" font-family="Arial,Helvetica,sans-serif" font-size="26" fill="#154459" font-weight="800" >AI assistance</text>
+<text x="481" y="556" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#446576" font-weight="500" >Summary + priority</text>
+<text x="481" y="590" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#446576" font-weight="500" >Suggested category</text>
+<rect x="481" y="632" width="202" height="38" rx="19" fill="#b6d9dc"/><text x="499" y="656" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#155263" font-weight="800" letter-spacing="2">ANALYZE</text>
+<path d="M742 541 h27 m-9-9 9 9-9 9" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/>
+</g><g><rect x="778" y="363" width="272" height="360" rx="23" fill="#f7fbfb"/>
+<circle cx="825" cy="418" r="27" fill="#155263"/><text x="817" y="427" font-family="Arial,Helvetica,sans-serif" font-size="25" fill="#fff" font-weight="800" >3</text>
+<text x="803" y="493" font-family="Arial,Helvetica,sans-serif" font-size="26" fill="#154459" font-weight="800" >Sector review</text>
+<text x="803" y="556" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#446576" font-weight="500" >Assigned department</text>
+<text x="803" y="590" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#446576" font-weight="500" >Status history</text>
+<rect x="803" y="632" width="202" height="38" rx="19" fill="#b6d9dc"/><text x="821" y="656" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#155263" font-weight="800" letter-spacing="2">MANAGE</text>
+<path d="M1064 541 h27 m-9-9 9 9-9 9" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/>
+</g><g><rect x="1100" y="363" width="272" height="360" rx="23" fill="#dbeaec"/>
+<circle cx="1147" cy="418" r="27" fill="#155263"/><text x="1139" y="427" font-family="Arial,Helvetica,sans-serif" font-size="25" fill="#fff" font-weight="800" >4</text>
+<text x="1125" y="493" font-family="Arial,Helvetica,sans-serif" font-size="26" fill="#154459" font-weight="800" >Resolution</text>
+<text x="1125" y="556" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#446576" font-weight="500" >Progress updates</text>
+<text x="1125" y="590" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#446576" font-weight="500" >Citizen notified</text>
+<rect x="1125" y="632" width="202" height="38" rx="19" fill="#b6d9dc"/><text x="1143" y="656" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#155263" font-weight="800" letter-spacing="2">TRACK</text>
+
+</g>
+<text x="95" y="892" font-family="Arial,Helvetica,sans-serif" font-size="23" fill="#255e70" font-weight="600" >React · ASP.NET Core Web API · SQL Server · AI-assisted reporting</text></svg>

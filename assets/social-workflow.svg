@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 980" role="img" aria-labelledby="title desc">
+<title id="title">Content Strategy Workflow — English Only</title>
+<desc id="desc">Three stages: strategic direction, editorial planning, and publishing with ongoing optimization. English text throughout.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#fffefa"/><stop offset="1" stop-color="#f5e8e8"/></linearGradient>
+<linearGradient id="pink" x2="1"><stop stop-color="#852643"/><stop offset="1" stop-color="#c36b8a"/></linearGradient><filter id="s" x="-25%" y="-25%" width="150%" height="170%"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#542238" flood-opacity=".08"/></filter></defs>
+<rect width="1500" height="980" rx="35" fill="url(#bg)"/>
+<circle cx="1360" cy="83" r="105" fill="#f5d7df" opacity=".62"/><circle cx="60" cy="920" r="150" fill="#f2e2e4" opacity=".6"/>
+<text x="90" y="83" font-size="20" font-family="Arial,sans-serif" font-weight="700" fill="#852643" letter-spacing="4">CONTENT OPERATIONS / MALAK.</text>
+<text x="87" y="148" font-size="50" font-family="Arial,sans-serif" font-weight="800" fill="#241b22">From an idea to measurable impact.</text>
+<text x="90" y="186" font-size="22" font-family="Arial,sans-serif" fill="#74656b">A repeatable framework for planning, publishing and continuous improvement.</text>
+<text x="90" y="233" font-size="16" font-weight="800" letter-spacing="3" font-family="Arial,sans-serif" fill="#9b415e">01 / STRATEGY</text>
+<rect x="90" y="255" width="227" height="123" rx="23" fill="#f9eced" stroke="#e2ccd2" stroke-width="1.4" filter="url(#s)"/>
+<circle cx="125" cy="295" r="18" fill="#fffaf9"/><text x="125" y="302" text-anchor="middle" font-size="17" font-family="Arial,sans-serif" font-weight="800" fill="#852643">1</text>
+<text x="110" y="346" font-size="20" font-family="Arial,sans-serif" font-weight="800" fill="#241b22">Purpose</text>
+<path d="M 327 316 h 23 m -9 -7 l 9 7 -9 7" fill="none" stroke="#9e6c7d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><rect x="357" y="255" width="227" height="123" rx="23" fill="#f5e2e9" stroke="#e2ccd2" stroke-width="1.4" filter="url(#s)"/>
+<circle cx="392" cy="295" r="18" fill="#fffaf9"/><text x="392" y="302" text-anchor="middle" font-size="17" font-family="Arial,sans-serif" font-weight="800" fill="#852643">2</text>
+<text x="377" y="346" font-size="20" font-family="Arial,sans-serif" font-weight="800" fill="#241b22">Strategy</text>
+<path d="M 594 316 h 23 m -9 -7 l 9 7 -9 7" fill="none" stroke="#9e6c7d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><rect x="624" y="255" width="227" height="123" rx="23" fill="#f9eced" stroke="#e2ccd2" stroke-width="1.4" filter="url(#s)"/>
+<circle cx="659" cy="295" r="18" fill="#fffaf9"/><text x="659" y="302" text-anchor="middle" font-size="17" font-family="Arial,sans-serif" font-weight="800" fill="#852643">3</text>
+<text x="644" y="346" font-size="20" font-family="Arial,sans-serif" font-weight="800" fill="#241b22">Positioning</text>
+<path d="M 861 316 h 23 m -9 -7 l 9 7 -9 7" fill="none" stroke="#9e6c7d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><rect x="891" y="255" width="227" height="123" rx="23" fill="#f5e2e9" stroke="#e2ccd2" stroke-width="1.4" filter="url(#s)"/>
+<circle cx="926" cy="295" r="18" fill="#fffaf9"/><text x="926" y="302" text-anchor="middle" font-size="17" font-family="Arial,sans-serif" font-weight="800" fill="#852643">4</text>
+<text x="911" y="346" font-size="20" font-family="Arial,sans-serif" font-weight="800" fill="#241b22">Content</text>
+<path d="M 1128 316 h 23 m -9 -7 l 9 7 -9 7" fill="none" stroke="#9e6c7d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><rect x="1158" y="255" width="227" height="123" rx="23" fill="#f9eced" stroke="#e2ccd2" stroke-width="1.4" filter="url(#s)"/>
+<circle cx="1193" cy="295" r="18" fill="#fffaf9"/><text x="1193" y="302" text-anchor="middle" font-size="17" font-family="Arial,sans-serif" font-weight="800" fill="#852643">5</text>
+<text x="1178" y="346" font-size="20" font-family="Arial,sans-serif" font-weight="800" fill="#241b22">Goals</text>
+
+<text x="90" y="433" font-size="16" font-weight="800" letter-spacing="3" font-family="Arial,sans-serif" fill="#9b415e">02 / PLANNING</text>
+<rect x="90" y="455" width="227" height="123" rx="23" fill="#e5eaf7" stroke="#e2ccd2" stroke-width="1.4" filter="url(#s)"/>
+<circle cx="125" cy="495" r="18" fill="#fffaf9"/><text x="125" y="502" text-anchor="middle" font-size="17" font-family="Arial,sans-serif" font-weight="800" fill="#852643">1</text>
+<text x="110" y="546" font-size="20" font-family="Arial,sans-serif" font-weight="800" fill="#241b22">Audience Research</text>
+<path d="M 327 516 h 23 m -9 -7 l 9 7 -9 7" fill="none" stroke="#9e6c7d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><rect x="357" y="455" width="227" height="123" rx="23" fill="#e5eaf7" stroke="#e2ccd2" stroke-width="1.4" filter="url(#s)"/>
+<circle cx="392" cy="495" r="18" fill="#fffaf9"/><text x="392" y="502" text-anchor="middle" font-size="17" font-family="Arial,sans-serif" font-weight="800" fill="#852643">2</text>
+<text x="377" y="546" font-size="20" font-family="Arial,sans-serif" font-weight="800" fill="#241b22">Content Plan</text>
+<path d="M 594 516 h 23 m -9 -7 l 9 7 -9 7" fill="none" stroke="#9e6c7d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><rect x="624" y="455" width="227" height="123" rx="23" fill="#e5eaf7" stroke="#e2ccd2" stroke-width="1.4" filter="url(#s)"/>
+<circle cx="659" cy="495" r="18" fill="#fffaf9"/><text x="659" y="502" text-anchor="middle" font-size="17" font-family="Arial,sans-serif" font-weight="800" fill="#852643">3</text>
+<text x="644" y="546" font-size="18" font-family="Arial,sans-serif" font-weight="800" fill="#241b22">Editorial Calendar</text>
+<path d="M 861 516 h 23 m -9 -7 l 9 7 -9 7" fill="none" stroke="#9e6c7d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><rect x="891" y="455" width="227" height="123" rx="23" fill="#fce7eb" stroke="#e2ccd2" stroke-width="1.4" filter="url(#s)"/>
+<circle cx="926" cy="495" r="18" fill="#fffaf9"/><text x="926" y="502" text-anchor="middle" font-size="17" font-family="Arial,sans-serif" font-weight="800" fill="#852643">4</text>
+<text x="911" y="546" font-size="18" font-family="Arial,sans-serif" font-weight="800" fill="#241b22">Review &amp; Filter</text>
+<path d="M 1128 516 h 23 m -9 -7 l 9 7 -9 7" fill="none" stroke="#9e6c7d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><rect x="1158" y="455" width="227" height="123" rx="23" fill="#f1dfe9" stroke="#e2ccd2" stroke-width="1.4" filter="url(#s)"/>
+<circle cx="1193" cy="495" r="18" fill="#fffaf9"/><text x="1193" y="502" text-anchor="middle" font-size="17" font-family="Arial,sans-serif" font-weight="800" fill="#852643">5</text>
+<text x="1178" y="546" font-size="18" font-family="Arial,sans-serif" font-weight="800" fill="#241b22">Refine &amp; Improve</text>
+
+<text x="90" y="633" font-size="16" font-weight="800" letter-spacing="3" font-family="Arial,sans-serif" fill="#9b415e">03 / EXECUTION</text>
+<rect x="90" y="655" width="227" height="123" rx="23" fill="#e8ebf8" stroke="#e2ccd2" stroke-width="1.4" filter="url(#s)"/>
+<circle cx="125" cy="695" r="18" fill="#fffaf9"/><text x="125" y="702" text-anchor="middle" font-size="17" font-family="Arial,sans-serif" font-weight="800" fill="#852643">1</text>
+<text x="110" y="746" font-size="20" font-family="Arial,sans-serif" font-weight="800" fill="#241b22">Tools &amp; AI</text>
+<path d="M 327 716 h 23 m -9 -7 l 9 7 -9 7" fill="none" stroke="#9e6c7d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><rect x="357" y="655" width="227" height="123" rx="23" fill="#f7e8c6" stroke="#e2ccd2" stroke-width="1.4" filter="url(#s)"/>
+<circle cx="392" cy="695" r="18" fill="#fffaf9"/><text x="392" y="702" text-anchor="middle" font-size="17" font-family="Arial,sans-serif" font-weight="800" fill="#852643">2</text>
+<text x="377" y="746" font-size="20" font-family="Arial,sans-serif" font-weight="800" fill="#241b22">Idea Generation</text>
+<path d="M 594 716 h 23 m -9 -7 l 9 7 -9 7" fill="none" stroke="#9e6c7d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><rect x="624" y="655" width="227" height="123" rx="23" fill="#e8ebf8" stroke="#e2ccd2" stroke-width="1.4" filter="url(#s)"/>
+<circle cx="659" cy="695" r="18" fill="#fffaf9"/><text x="659" y="702" text-anchor="middle" font-size="17" font-family="Arial,sans-serif" font-weight="800" fill="#852643">3</text>
+<text x="644" y="746" font-size="20" font-family="Arial,sans-serif" font-weight="800" fill="#241b22">Publish / Post</text>
+<path d="M 861 716 h 23 m -9 -7 l 9 7 -9 7" fill="none" stroke="#9e6c7d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><rect x="891" y="655" width="227" height="123" rx="23" fill="#fce7eb" stroke="#e2ccd2" stroke-width="1.4" filter="url(#s)"/>
+<circle cx="926" cy="695" r="18" fill="#fffaf9"/><text x="926" y="702" text-anchor="middle" font-size="17" font-family="Arial,sans-serif" font-weight="800" fill="#852643">4</text>
+<text x="911" y="746" font-size="20" font-family="Arial,sans-serif" font-weight="800" fill="#241b22">Analyze Results</text>
+<path d="M 1128 716 h 23 m -9 -7 l 9 7 -9 7" fill="none" stroke="#9e6c7d" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><rect x="1158" y="655" width="227" height="123" rx="23" fill="#e1f4e9" stroke="#e2ccd2" stroke-width="1.4" filter="url(#s)"/>
+<circle cx="1193" cy="695" r="18" fill="#fffaf9"/><text x="1193" y="702" text-anchor="middle" font-size="17" font-family="Arial,sans-serif" font-weight="800" fill="#852643">5</text>
+<text x="1178" y="746" font-size="18" font-family="Arial,sans-serif" font-weight="800" fill="#241b22">Optimize &amp; Grow</text>
+
+
+<rect x="88" y="860" width="1328" height="72" rx="24" fill="url(#pink)"/>
+<text x="124" y="905" font-size="21" font-family="Arial,sans-serif" font-weight="700" fill="#fffaf9">Measure → learn → improve → repeat.</text>
+<text x="1370" y="907" text-anchor="end" font-size="19" font-family="Arial,sans-serif" font-weight="700" fill="#fffaf9">CREATIVE + ANALYTICAL</text>
+</svg>
