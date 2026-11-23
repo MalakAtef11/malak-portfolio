@@ -1,0 +1,112 @@
+/* Malak Portfolio · Web projects editorial showcase v1 */
+.wp-page{--wp-accent:#812a4a;--wp-ink:#2d2029}
+.wp-page :where(.wp-lead,.wp-muted){color:var(--muted)}
+.wp-page a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+.wp-page .wp-eyebrow{font:800 11px/1.3 'Space Grotesk',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+.wp-page .wp-title{font:750 clamp(44px,7vw,105px)/.98 'Space Grotesk',Arial,sans-serif;letter-spacing:-.08em;margin:16px 0 26px}
+.wp-page .wp-title em,.wp-page .wp-section-title em{font-family:Georgia,serif;font-style:italic;font-weight:400;color:var(--accent);letter-spacing:-.065em}
+.wp-page .wp-lead{font-size:clamp(16px,1.45vw,19px);line-height:1.8;max-width:780px;margin:0}
+.wp-page .wp-section-title{font:750 clamp(35px,4.4vw,63px)/1.08 'Space Grotesk',sans-serif;letter-spacing:-.064em;margin:12px 0 19px}
+.wp-page .wp-mini-title{font:740 clamp(24px,2.3vw,34px)/1.2 'Space Grotesk',sans-serif;letter-spacing:-.05em;margin:0 0 10px}
+.wp-page .wp-arrow{display:inline-block;flex:0 0 auto;width:17px;height:17px;vertical-align:-3px;stroke:currentColor;fill:none}
+.wp-page .wp-link{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:800;color:var(--accent);padding:10px 0;text-decoration:none}
+.wp-page .wp-link:hover .wp-arrow,.wp-page .wp-featured:hover .wp-arrow{transform:translate(3px,-3px)}
+.wp-page .wp-arrow{transition:transform .22s ease}
+.wp-page .wp-btns{display:flex;align-items:center;gap:15px;flex-wrap:wrap;margin-top:28px}
+.wp-page .wp-btns .btn{display:inline-flex;align-items:center;gap:8px}
+.wp-page .wp-pills{display:flex;gap:8px;flex-wrap:wrap;margin:19px 0 0}
+.wp-page .wp-pill{border:1px solid var(--line);background:var(--soft);color:var(--accent);border-radius:999px;padding:8px 12px;font-size:11px;font-weight:800}
+.wp-page .wp-pill.soft{background:var(--cream);color:var(--ink)}
+.wp-page .wp-note{font-size:12px;color:var(--muted);line-height:1.6}
+.wp-intro{background:radial-gradient(circle at 77% 24%,rgba(215,149,170,.2),transparent 39%),var(--paper);padding:100px 0 94px;border-bottom:1px solid var(--line);position:relative;overflow:hidden}
+.wp-intro-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);gap:50px;align-items:center}
+.wp-intro-grid .wp-title{font-size:clamp(58px,8vw,115px)}
+.wp-intro-ticket{min-height:330px;max-width:320px;padding:35px 29px;background:linear-gradient(145deg,#a64c70,#67223f);border-radius:27px 27px 85px 27px;box-shadow:20px 28px 48px rgba(88,31,52,.19);transform:rotate(6deg);color:#fff9f4;display:flex;flex-direction:column;justify-content:space-between}
+.wp-intro-ticket span{font-size:11px;letter-spacing:.15em;font-weight:800}
+.wp-intro-ticket strong{font:750 104px/1 'Space Grotesk',sans-serif;letter-spacing:-.12em}
+.wp-intro-ticket small{font:500 14px/1.7 'Space Grotesk',sans-serif}
+.wp-block{padding:79px 0;border-bottom:1px solid var(--line)}
+.wp-heading-row{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:30px}
+.wp-heading-row p{max-width:520px;color:var(--muted);font-size:14px;line-height:1.7}
+.wp-featured{display:grid;grid-template-columns:1.03fr .97fr;overflow:hidden;background:var(--cream);border:1px solid var(--line);border-radius:30px;min-height:415px;box-shadow:0 20px 54px rgba(67,25,45,.06);transition:box-shadow .26s,transform .26s}
+.wp-featured:hover{box-shadow:0 30px 70px rgba(67,25,45,.13);transform:translateY(-4px)}
+.wp-featured-media{position:relative;min-height:280px;overflow:hidden;background:#e8eef0}
+.wp-featured-media img{width:100%;height:100%;object-fit:cover;display:block}
+.wp-featured-media .wp-floating{position:absolute;left:20px;bottom:20px;z-index:1;font-size:10px;font-weight:800;letter-spacing:.12em;color:#164855;background:#f6fbf9;padding:11px 14px;border-radius:99px}
+.wp-featured-copy{padding:38px 45px;display:flex;flex-direction:column;justify-content:center}
+.wp-featured-copy h3{font:750 clamp(35px,4.4vw,58px)/1.02 'Space Grotesk',sans-serif;letter-spacing:-.06em;margin:14px 0 19px}
+.wp-featured-copy>p{color:var(--muted);font-size:15px;line-height:1.75;margin:0}
+.wp-featured .wp-link{margin-top:30px;border-top:1px solid var(--line);padding-top:19px;justify-content:space-between}
+.wp-card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.wp-card{background:var(--cream);border:1px solid var(--line);border-radius:26px;overflow:hidden;display:flex;flex-direction:column;min-width:0;transition:transform .24s,box-shadow .24s}
+.wp-card:hover{transform:translateY(-6px);box-shadow:0 20px 44px rgba(67,25,45,.1)}
+.wp-card-media{height:204px;overflow:hidden;background:#f3e8eb;position:relative}
+.wp-card-media img{width:100%;height:100%;object-fit:cover;display:block}
+.wp-card-media.is-icon{display:grid;place-items:center;background:linear-gradient(140deg,#ebdbe6,#f8eee9)}
+.wp-card-media.is-icon>span{font-family:Georgia,serif;font-size:110px;color:#813953}
+.wp-card-copy{padding:26px 23px;display:flex;flex-direction:column;gap:12px;flex:1}
+.wp-card-copy h3{font:750 clamp(23px,2.5vw,33px)/1.13 'Space Grotesk',sans-serif;letter-spacing:-.052em;margin:3px 0 0}
+.wp-card-copy p{font-size:13px;line-height:1.7;color:var(--muted);margin:0;flex:1}
+.wp-card .wp-link{padding:15px 0 0;margin-top:13px;border-top:1px solid var(--line);justify-content:space-between}
+.wp-concept-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.wp-concept-card{border-radius:28px;overflow:hidden;border:1px solid var(--line);background:var(--cream);display:flex;flex-direction:column;min-width:0}
+.wp-concept-img{aspect-ratio:16/10;background:#f8f4ed;overflow:hidden}
+.wp-concept-img img{display:block;width:100%;height:100%;object-fit:cover}
+.wp-concept-copy{padding:28px 30px 30px;flex:1;display:flex;flex-direction:column}
+.wp-concept-copy h3{font:750 clamp(30px,3.5vw,47px)/1 'Space Grotesk',sans-serif;letter-spacing:-.055em;margin:13px 0 15px}
+.wp-concept-copy p{font-size:14px;line-height:1.75;color:var(--muted);flex:1}
+.wp-concept-copy .wp-link{border-top:1px solid var(--line);margin-top:15px;padding-top:20px;justify-content:space-between}
+.wp-band{background:var(--soft);padding:72px 0}
+.wp-band .container{display:flex;align-items:center;justify-content:space-between;gap:30px}
+.wp-band h2{font:750 clamp(31px,4vw,52px)/1.1 'Space Grotesk',sans-serif;letter-spacing:-.055em;margin:10px 0}
+.wp-band p{font-size:14px;color:var(--muted);margin:0;max-width:640px}
+.wp-case-top{padding:64px 0 53px;background:radial-gradient(circle at 83% 20%,rgba(213,142,166,.17),transparent 43%),var(--paper);border-bottom:1px solid var(--line)}
+.wp-back{display:inline-flex;align-items:center;gap:9px;color:var(--accent);font-size:13px;font-weight:800;text-decoration:none;padding-bottom:5px;border-bottom:1px solid var(--line)}
+.wp-case-top .wp-title{max-width:1100px;font-size:clamp(56px,8vw,110px);margin:43px 0 23px}
+.wp-case-headline{display:flex;align-items:end;justify-content:space-between;gap:30px}
+.wp-case-headline .wp-lead{max-width:780px}
+.wp-case-number{flex:0 0 128px;min-height:120px;border-radius:25px 25px 55px 25px;background:var(--accent);color:var(--paper);transform:rotate(7deg);display:flex;flex-direction:column;align-items:center;justify-content:center}
+.wp-case-number span{font-size:10px;letter-spacing:.11em}
+.wp-case-number strong{font:750 63px 'Space Grotesk',sans-serif;letter-spacing:-.09em;line-height:1}
+.wp-media-hero{padding:40px 0 20px}
+.wp-media-frame{background:var(--cream);border:1px solid var(--line);padding:13px;border-radius:30px;box-shadow:0 25px 70px rgba(48,26,40,.08);overflow:hidden}
+.wp-media-frame img{display:block;width:100%;height:auto;border-radius:19px}
+.wp-media-frame figcaption{font-size:12px;color:var(--muted);margin:13px 13px 4px;line-height:1.7}
+.wp-overview-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:38px}
+.wp-overview-grid>div>p{font-size:17px;line-height:1.85;color:var(--muted);margin:0}
+.wp-info-aside{background:var(--cream);border:1px solid var(--line);border-radius:26px;padding:33px}
+.wp-info-aside .wp-eyebrow{margin-bottom:19px}
+.wp-info-aside h3{font:750 27px/1.18 'Space Grotesk',sans-serif;letter-spacing:-.05em;margin:0 0 13px}
+.wp-info-aside p{font-size:14px;line-height:1.8;color:var(--muted)}
+.wp-feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.wp-feature{padding:28px 23px;border-radius:24px;background:var(--cream);border:1px solid var(--line);min-height:215px}
+.wp-feature>.wp-index{font:750 13px 'Space Grotesk',sans-serif;color:var(--accent);letter-spacing:.08em}
+.wp-feature h3{font:750 22px/1.2 'Space Grotesk',sans-serif;letter-spacing:-.045em;margin:25px 0 10px}
+.wp-feature p{color:var(--muted);font-size:13px;line-height:1.7;margin:0}
+.wp-flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
+.wp-flow>div{padding:24px 21px;border:1px solid var(--line);border-radius:21px;background:var(--cream);position:relative}
+.wp-flow>div::before{content:"";width:8px;height:8px;display:block;background:var(--accent);border-radius:50%;margin-bottom:22px}
+.wp-flow h3{font:750 20px 'Space Grotesk',sans-serif;letter-spacing:-.04em;margin:0 0 10px}
+.wp-flow p{font-size:12px;line-height:1.7;color:var(--muted);margin:0}
+.wp-role-note{margin-top:24px;padding:22px 25px;border-left:3px solid var(--accent);background:var(--soft);border-radius:0 16px 16px 0;font-size:14px;color:var(--ink);line-height:1.75}
+.wp-pending-frame{border-radius:26px;border:1px dashed #cba5b3;padding:32px;background:linear-gradient(130deg,var(--cream),var(--soft));text-align:center}
+.wp-pending-frame strong{font:750 29px 'Space Grotesk',sans-serif;letter-spacing:-.055em}
+.wp-pending-frame p{font-size:14px;color:var(--muted);line-height:1.8;max-width:600px;margin:12px auto 0}
+.wp-github-card{border:1px solid var(--line);border-radius:26px;background:var(--cream);padding:32px;display:flex;align-items:center;justify-content:space-between;gap:23px}
+.wp-github-card strong{font:750 23px 'Space Grotesk',sans-serif;letter-spacing:-.04em}
+.wp-github-card p{color:var(--muted);font-size:13px;margin:9px 0}
+.wp-github-card a{white-space:nowrap}
+.wp-logo-strip{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:center}
+.wp-logo-strip img{width:100%;max-height:160px;object-fit:contain;background:var(--cream);border-radius:17px;border:1px solid var(--line)}
+.wp-logo-strip .wp-muted{font-size:12px}
+.wp-restricted{max-width:750px;background:var(--soft);border:1px solid var(--line);border-radius:28px;padding:34px}
+.wp-restricted p{line-height:1.85;font-size:15px;color:var(--muted)}
+.wp-copyright{padding:18px 22px;border-radius:15px;border:1px solid var(--line);background:var(--cream);font-size:13px;color:var(--muted)}
+.wp-viewport-note{padding:24px;background:var(--soft);border:1px solid var(--line);border-radius:20px}
+.wp-viewport-note strong{font-size:14px}
+.wp-page .wp-next{border-top:1px solid var(--line);padding:55px 0 74px}
+.wp-page .wp-next .container{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.wp-page .wp-next p{color:var(--muted);font-size:13px;margin:8px 0}
+@media(max-width:980px){.wp-intro-grid{grid-template-columns:1fr;gap:40px}.wp-intro-ticket{min-height:240px;max-width:370px;transform:rotate(3deg)}.wp-intro-ticket strong{font-size:96px}.wp-card-grid{grid-template-columns:1fr 1fr}.wp-overview-grid{grid-template-columns:1fr}.wp-case-headline{align-items:start}}
+@media(max-width:680px){.wp-intro{padding:58px 0 66px}.wp-intro-grid .wp-title{font-size:clamp(52px,12vw,75px)}.wp-intro-ticket{max-width:290px;min-height:230px;padding:27px}.wp-block{padding:53px 0}.wp-heading-row{display:block}.wp-heading-row p{margin:17px 0}.wp-featured{grid-template-columns:1fr}.wp-featured-media{min-height:210px}.wp-featured-copy{padding:26px}.wp-card-grid,.wp-concept-grid,.wp-feature-grid,.wp-flow,.wp-logo-strip{grid-template-columns:1fr}.wp-card-media{height:200px}.wp-band .container{display:block}.wp-band{padding:47px 0}.wp-case-top{padding:42px 0 43px}.wp-case-top .wp-title{font-size:clamp(49px,12.2vw,75px);overflow-wrap:anywhere;letter-spacing:-.065em}.wp-case-number{flex:0 0 75px;min-height:90px;border-radius:18px 18px 34px 18px}.wp-case-number strong{font-size:40px}.wp-case-number span{font-size:8px}.wp-case-headline{gap:10px}.wp-case-headline .wp-lead{font-size:14px}.wp-media-hero{padding:24px 0 8px}.wp-media-frame{padding:8px;border-radius:20px}.wp-overview-grid>div>p{font-size:15px}.wp-github-card,.wp-page .wp-next .container{align-items:start;flex-direction:column}.wp-github-card a{white-space:normal}.wp-feature{min-height:auto;padding:22px}.wp-feature h3{margin:18px 0 9px}.wp-pending-frame{padding:27px 20px}.wp-info-aside{padding:25px}.wp-restricted{padding:25px}}
+@media(prefers-reduced-motion:reduce){.wp-card,.wp-featured,.wp-arrow{transition:none}.wp-page *{scroll-behavior:auto}}
