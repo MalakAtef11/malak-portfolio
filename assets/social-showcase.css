@@ -31,7 +31,7 @@
 .sm-range-btn[aria-pressed="true"]{background:var(--accent);color:var(--paper)}
 .sm-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
 .sm-metric{background:var(--cream);padding:30px 28px;border:1px solid var(--line);border-radius:26px;min-height:195px;position:relative;overflow:hidden}
-.sm-metric:after{content:"✳";position:absolute;right:17px;top:13px;font-size:29px;color:var(--hot);opacity:.65}
+.sm-metric:after{content:"";position:absolute;right:25px;top:24px;width:16px;height:16px;border:2px solid var(--accent);border-radius:50%;opacity:.25}
 .sm-metric span{display:block;text-transform:uppercase;letter-spacing:.14em;font-size:11px;color:var(--accent);font-weight:800}
 .sm-metric strong{display:block;font:700 clamp(40px,4.5vw,65px)/1 'Space Grotesk',sans-serif;letter-spacing:-.07em;margin:26px 0 12px}
 .sm-metric small{color:var(--muted);font-size:12px;line-height:1.6;display:block}
@@ -52,7 +52,7 @@
 .sm-case-main .sm-case-desc{max-width:500px;color:var(--muted)}
 .sm-checks{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:30px}
 .sm-check{background:var(--soft);border:1px solid var(--line);padding:16px;border-radius:17px;font-size:12px;font-weight:750}
-.sm-check:before{content:"✦";display:inline-block;color:var(--accent);margin-right:8px}
+.sm-check:before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--accent);margin-right:9px;vertical-align:2px}
 .sm-case-art{border-radius:30px;background:linear-gradient(158deg,#34153a,#69277b 63%,#a063cf);min-height:440px;padding:40px 36px;color:#fff;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between}
 .sm-case-art:after{content:"";position:absolute;width:430px;height:430px;border:60px solid rgba(255,255,255,.075);border-radius:50%;right:-240px;top:-90px}
 .sm-case-art .sm-brandline{letter-spacing:.23em;font-size:12px;font-weight:800}
@@ -120,3 +120,39 @@
 @media(max-width:950px){.sm-hero-grid,.sm-case,.sm-content-split{grid-template-columns:1fr}.sm-hero-visual{min-height:390px}.sm-primary-sticker{max-width:360px}.sm-timeline,.sm-process{grid-template-columns:repeat(2,minmax(0,1fr))}.sm-performance-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:650px){.sm-hero{padding:55px 0 65px}.sm-hero h1{font-size:clamp(51px,13vw,73px)}.sm-hero-visual{min-height:340px}.sm-side-sticker{right:0;bottom:1%;transform:rotate(3deg)}.sm-block{padding:55px 0}.sm-section-heading{display:block}.sm-section-heading>p{margin-bottom:24px}.sm-metrics,.sm-performance-grid,.sm-process,.sm-timeline{grid-template-columns:1fr}.sm-metric{min-height:155px}.sm-chart-band{grid-template-columns:1fr}.sm-case-main{padding:30px 24px}.sm-case-art{min-height:360px;padding:28px}.sm-checks{grid-template-columns:1fr}.sm-week-board div{min-height:61px;font-size:9px;padding:9px 3px}.sm-week-board div span{font-size:8px;margin-top:7px}.sm-plan-item{grid-template-columns:48px 1fr;gap:12px}.sm-plan-item small{grid-column:2;justify-self:start}.sm-closing .container{display:block}.sm-hero .sm-intro{font-size:16px}}
 @media(prefers-reduced-motion:reduce){.sm-post-card{transition:none}.sm-page *{scroll-behavior:auto}}
+
+
+/* Device-independent icons and touch-first layout */
+.sm-page .sm-ui-icon{display:inline-block;vertical-align:-.17em;width:1.08em;height:1.08em;flex:0 0 auto;stroke:currentColor;fill:none}
+.sm-page .nav-icon .sm-ui-icon{width:22px;height:22px}
+.sm-page .nav-chevron .sm-ui-icon{width:15px;height:15px}
+.sm-page .nav-panel-item b .sm-ui-icon{width:17px;height:17px}
+.sm-page .theme-btn .sm-ui-icon{width:19px;height:19px;vertical-align:middle}
+.sm-page .sm-bubble-list span{display:inline-flex;align-items:center;gap:7px}
+.sm-page .sm-bubble-list .sm-ui-icon{width:14px;height:14px}
+.sm-page .sm-hero-ctas .sm-ui-icon,.sm-page .sm-links .sm-ui-icon,.sm-page .sm-cta .sm-ui-icon{width:16px;height:16px}
+.sm-page .sm-hero-ctas a,.sm-page .sm-links a,.sm-page .nav-contact{display:inline-flex;gap:9px;align-items:center}
+.sm-page .sm-deco-star .sm-ui-icon{width:68px;height:68px}
+.sm-page .sm-deco-star{line-height:0}
+.sm-page .sm-metric strong{overflow-wrap:anywhere}
+.sm-page .sm-section-heading>*{min-width:0}
+.sm-page .sm-case-art strong{overflow-wrap:normal}
+@media(max-width:650px){
+.sm-page .sm-hero-grid,.sm-page .sm-case,.sm-page .sm-content-split,.sm-page .sm-chart-band{min-width:0}
+.sm-page .sm-hero-visual{min-height:355px;padding:10px 16px}
+.sm-page .sm-primary-sticker{width:min(100%,305px);min-height:290px;padding:27px;transform:rotate(-4deg);border-radius:28px 28px 70px 28px}
+.sm-page .sm-primary-sticker strong{font-size:clamp(55px,16vw,80px)}
+.sm-page .sm-primary-sticker small{font-size:11px;letter-spacing:0}
+.sm-page .sm-side-sticker{max-width:150px;right:4px;bottom:0;padding:14px}
+.sm-page .sm-side-sticker strong{font-size:28px}
+.sm-page .sm-deco-star{left:0;top:0}
+.sm-page .sm-deco-star .sm-ui-icon{width:42px;height:42px}
+.sm-page .sm-section-heading .sm-range-controls{width:max-content;max-width:100%;box-sizing:border-box}
+.sm-page .sm-metric{padding:25px 24px}
+.sm-page .sm-metric strong{font-size:clamp(36px,11vw,58px)}
+.sm-page .sm-case-art strong{font-size:clamp(56px,16vw,90px)}
+.sm-page .sm-content-split>*{min-width:0}
+.sm-page .sm-plan-item{overflow:hidden}
+.sm-page .sm-hero-ctas{align-items:stretch}
+.sm-page .sm-hero-ctas a{justify-content:center}
+}
