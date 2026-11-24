@@ -373,7 +373,7 @@ document.querySelectorAll('video[data-demo-video]').forEach(video=>{
   const script=document.createElement('script');
   script.dataset.portfolioI18n='';
   const siteAsset=document.querySelector('script[src*="assets/site.js"]');
-  script.src=new URL('i18n-ar.js?v=20261123-v3',siteAsset?.src || document.currentScript?.src || document.baseURI).href;
+  script.src=new URL('i18n-ar.js?v=20261124-editorial-ar-v1',siteAsset?.src || document.currentScript?.src || document.baseURI).href;
   script.async=false;
   document.body.appendChild(script);
 })();
